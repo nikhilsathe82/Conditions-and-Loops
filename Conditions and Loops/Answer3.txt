@@ -1,0 +1,31 @@
+A loop is used to execute a group of lines of code multiple times till the time they satisfy a specified conditions.
+Loops are efficient way to repeat a set of lines of code as we do not have to write it again and again.
+They are essential for automating tasks and performing repetitive operations.
+
+There are three main types of loops in JavaScript: for loops, while loops, and do...while loops.
+
+
+1. For loops: These loops are used when we know how many times we want to execute a block of code. The syntax for a for loop is:
+for (var i = 0; i < 10; i++) {
+  // code to be executed
+}
+
+In this example, the loop will iterate 10 times, with the variable i taking on the values 0, 1, 2, ..., 9. On each iteration,
+the code inside the loop body will be executed.
+
+2. While loops: These loops are used when we don't know how many times we want to execute a block of code,
+ but we know that we want to keep executing it as long as a certain condition is met. The syntax for a while loop is:
+while (condition) {
+  // code to be executed
+}
+
+In this example, the loop will keep iterating as long as the condition condition is true. The condition can be any JavaScript expression that evaluates to true or false.
+
+3. Do...while loops: These loops are similar to while loops, but they guarantee that the code inside the loop body will be executed at least once.
+ The syntax for a do...while loop is:
+do {
+  // code to be executed
+} while (condition);
+In this example, the loop will iterate at least once, and then it will keep iterating as long as the condition condition is true.
+Loops are a powerful tool that can be used to simplify our code and make it more efficient.
+By understanding the different types of loops and how to use them, we can write better JavaScript code.

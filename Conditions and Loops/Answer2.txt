@@ -1,0 +1,18 @@
+function grades(marks) {
+
+    if(marks>=90){
+        console.log("You have got grade A");
+        return;           
+    } else if (marks<90 && marks>=70) {
+        console.log("You have got grade B");
+      return;
+    } else if (marks<70 && marks>=50) {
+        console.log("You have got grade C");
+      return;
+    } else {
+        console.log("You have got grade F");
+      return;
+    }   
+}
+
+grades(45);

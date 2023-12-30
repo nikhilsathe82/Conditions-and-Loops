@@ -1,0 +1,109 @@
+Conditional Statements help you to make a decisions based on certain conditions and thereby control the flow of program. Also, known as decision-making statement
+they are useful in error and exception handling, program execution flow, and much more.
+
+In JavaScript, there are four types of conditional statements:
+
+If statement:
+The if statement executes a specified code segment if the given condition is true.
+syntax:
+if (condition){
+  # code to execute if condition is true
+}else{
+  # code to execute if condition is false
+}
+
+example:
+if (age <12){
+  console.log("Age is less than 12");
+} else{
+   console.log("Age is greater than 12");
+};
+
+
+
+Else statement:
+The else statement executes the code associated with it if the given if condition is false.
+syntax:
+if (condition){
+  # code to execute if condition is true
+}else{
+  # code to execute if condition is false };
+
+example:
+if (age <12){
+  console.log("Age is less than 12");
+} else{
+   console.log("Age is greater than 12");
+};
+
+Else if statement:
+The else if statement specifies a new condition for testing when the first if condition is false.
+syntax:
+if (condition1){
+  # code to execute if condition1 is true
+} else if (condition2){
+  # code to execute if condition1 is false and condition2 is true
+}else if (condition3){
+  # code to execute if condition1 and condition2 are false and condition3 is true
+}else {
+  # code to execute if all conditions are false
+}
+
+example:
+function grades(marks) {
+
+    if(marks>=90){
+        console.log("You have got grade A");
+        return;           
+    } else if (marks<90 && marks>=70) {
+        console.log("You have got grade B");
+      return;
+    } else if (marks<70 && marks>=50) {
+        console.log("You have got grade C");
+      return;
+    } else {
+        console.log("You have got grade F");
+      return;
+    }   
+}
+
+grades(45);
+
+
+Switch-case statement:
+The switch-case statement specifies multiple alternative code blocks for execution and executes these cases based on certain conditions.
+syntax:
+switch(variable/expression) {
+    case value1:  
+        // body of case 1
+        break;
+
+    case value2:  
+        // body of case 2
+        break;
+
+    case valueN:
+        // body of case N
+        break;
+
+    default:
+        // body of default
+}
+
+example:
+// program using switch statement
+let a = 2;
+
+switch (a) {
+
+    case 1:
+        a = 'one';
+        break;
+    case 2:
+        a = 'two';
+        break;
+    default:
+        a = 'not found';
+        break;
+}
+console.log(`The value is ${a}`);
